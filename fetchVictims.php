@@ -42,7 +42,10 @@
 						"<td><span class=\"glyphicon glyphicon-".$icons[(int)$row['status']]."\"></span></td>".
 						"<td>".$row['ip']."</td>".
 						"<td>".$time_f." ago</td>".
-						"<td><button class=\"btn btn-success flip-btn btn-sm\" data-id=\"".$row['id']."\" data-flip=\"".$attack['new_url']."\" data-ip=\"".$row['ip']."\">Flip</button></td>".
+						"<td>".
+            "<button class=\"btn btn-success flip-btn btn-sm\" data-id=\"".$row['id']."\" data-flip=\"".$attack['new_url']."\" data-ip=\"".$row['ip']."\">Flip</button>".
+            "<button class=\"btn btn-danger rm-btn btn-sm\" data-id=\"".$row['id']."\">Delete</button>".
+            "</td>".
 						"</tr>";
 		}
 		print "</table></td></tr>";
@@ -73,7 +76,10 @@
 					"<td><span class=\"glyphicon glyphicon-".$icons[(int)$row['status']]."\"></span></td>".
 					"<td>".$row['ip']."</td>".
 					"<td>".$time_f." ago</td>".
-					"<td><button class=\"btn btn-success flip-btn btn-sm\" data-id=\"".$row['id']."\" data-flip=\"".$attack['new_url']."\" data-ip=\"".$row['ip']."\">Flip</button></td>".
+					"<td>".
+          "<button class=\"btn btn-success flip-btn btn-sm\" data-id=\"".$row['id']."\" data-flip=\"".$attack['new_url']."\" data-ip=\"".$row['ip']."\">Flip</button> ".
+          "<button class=\"btn btn-danger rm-btn btn-sm\" data-id=\"".$row['id']."\">Delete</button>".
+          "</td>".
 					"</tr>";
 	}
 	print "</table></td></tr>";
